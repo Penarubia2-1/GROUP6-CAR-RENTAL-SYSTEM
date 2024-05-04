@@ -13,16 +13,16 @@ import javax.swing.*;
  */
 public class Car2 implements ActionListener {
     
-    private JFrame f = new JFrame("My Login");
-    private JLabel lblName, lbldays, lblAddress,lblContactnumber,lblLoginResults;
+    private JFrame f = new JFrame("Reservation");
+    private JLabel lblVehicleModel, lbldays, lblAddress,lblContactnumber,lblNextResults;
     private JTextField txtfldName = new JTextField();
     private JTextField txtflddays = new JTextField();
        private JTextField txtfldAddress = new JTextField();
        private JTextField txtfldContactnumber = new JTextField(); 
-      private JTextField txtfldLoginResults = new JTextField(); 
+      private JTextField txtfldNextResults = new JTextField(); 
 
     private JButton btnNext, btnBack;
-    private JTextArea txtareaLoginResults = new JTextArea();
+    private JTextArea txtareaNextResults = new JTextArea();
 
     
     Car2(){
@@ -31,11 +31,11 @@ public class Car2 implements ActionListener {
     f.setLayout(null);
     f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
     
-    lblName = new JLabel("Name:");
-    lblName.setBounds(20, 50, 200, 30);
-    lblName.setFont(new Font("Arial", Font.BOLD, 20));
+    lblVehicleModel = new JLabel("VehicleModel:");
+    lblVehicleModel.setBounds(20, 50, 200, 30);
+    lblVehicleModel.setFont(new Font("Arial", Font.BOLD, 20));
     
-    lbldays = new JLabel("days");
+    lbldays = new JLabel("days:");
     lbldays.setBounds(20, 100, 200, 30);
     lbldays.setFont(new Font("Arial", Font.BOLD, 20));
   
@@ -53,18 +53,6 @@ public class Car2 implements ActionListener {
     
     
     
-    txtflddays.setBounds(200, 100, 150,30);
-    txtflddays.setFont(new Font("Arial", Font.PLAIN, 20));
-    
-    
-    txtfldAddress.setBounds(200,150 , 150,30);
-    txtfldAddress.setFont(new Font("Arial", Font.PLAIN, 20));
-    
-    txtfldContactnumber.setBounds(200, 200, 150,30);
-    txtfldContactnumber.setFont(new Font("Arial", Font.PLAIN, 20));
-   
-    txtfldLoginResults.setBounds(200, 300, 150,30);
-    txtfldLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));
 
     
     
@@ -79,29 +67,38 @@ public class Car2 implements ActionListener {
     btnBack.setFont(new Font("Arial", Font.PLAIN, 15));
     btnBack.addActionListener(this);
     
+    txtflddays.setBounds(200, 100, 150,30);
+    txtflddays.setFont(new Font("Arial", Font.PLAIN, 20));
+    
+    
+    txtfldAddress.setBounds(200,150 , 150,30);
+    txtfldAddress.setFont(new Font("Arial", Font.PLAIN, 20));
+    
+    txtfldContactnumber.setBounds(200, 200, 150,30);
+    txtfldContactnumber.setFont(new Font("Arial", Font.PLAIN, 20));
+   
+    txtfldNextResults.setBounds(200, 300, 150,30);
+    txtfldNextResults.setFont(new Font("Arial", Font.PLAIN, 15));
+
    
     
-    lblLoginResults = new JLabel("");
-    lblLoginResults.setBounds(20, 300, 480, 30);
-    lblLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));
+    lblNextResults = new JLabel("");
+    lblNextResults.setBounds(20, 300, 480, 30);
+    lblNextResults.setFont(new Font("Arial", Font.PLAIN, 15));
     
-    txtareaLoginResults.setBounds(20, 300, 400, 200);
-    txtareaLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));  
-    txtareaLoginResults.setEditable(false);
-    txtareaLoginResults.setLineWrap(true);
+    txtareaNextResults.setBounds(20, 300, 400, 200);
+    txtareaNextResults.setFont(new Font("Arial", Font.PLAIN, 15));  
+    txtareaNextResults.setEditable(false);
+    txtareaNextResults.setLineWrap(true);
     
     f.add(btnNext);
     f.add(btnBack);
-    f.add(lblName);
+    f.add(lblVehicleModel);
     f.add(lbldays);
     f.add(lblContactnumber);
-    f.add(txtareaLoginResults);
+    f.add(txtareaNextResults);
     f.add(lblAddress);
-    f.add(txtfldName);
-    f.add(txtflddays);
-    f.add(txtfldAddress);
-    f.add(txtfldContactnumber);
-    
+    f.add(lblNextResults);
    
     
             
@@ -114,22 +111,24 @@ public class Car2 implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource() == btnNext){
-            
-           lbldays.setText("");
-           lbl
-           
-           lblLoginResults.setText("");
-           txtareaLoginResults.setText("Your email : "+email+"\nPassword : "+password);
+            JFrame frame2 = new JFrame("");
+            frame2.setVisible(true);
+            frame2.setSize(450,400);
+            JLabel label = new JLabel("");
+            JPanel panel = new JPanel();
+            frame2.add(panel);
+            panel.add(label);
+                   
+ 
         }else if(e.getSource() == btnBack){
-           txtfldName.setText("");
-           txtflddays.setText("");
-           txtfldContactnumber.setText("");
-           txtfldAddress.setText("");
-           
-           
-           
-           lblLoginResults.setText("");
-           txtareaLoginResults.setText(""); 
+           JFrame frame3 = new JFrame("");
+            frame3.setVisible(true);
+            frame3.setSize(450,400);
+            JLabel label = new JLabel("");
+            JPanel panel = new JPanel();
+            frame3.add(panel);
+            panel.add(label);
+            
            
         }
         
