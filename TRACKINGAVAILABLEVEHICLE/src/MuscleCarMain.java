@@ -5,7 +5,7 @@
 
 /**
  *
- * @author lenovo
+ * @author penarubia
  */
 public class MuscleCarMain extends availablevehicles{
     public static void main(String[] args) {

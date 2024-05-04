@@ -6,7 +6,7 @@ package trackingavailablevehicle;
 
 /**
  *
- * @author lenovo
+ * @author penarubia
  */
 public class TRACKINGAVAILABLEVEHICLE {
 
