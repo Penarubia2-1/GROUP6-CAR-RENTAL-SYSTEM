@@ -9,16 +9,14 @@ package homepage;
  *
  * @author 639319165346
  */
-public class Homepage {
+public class ClientAdminMain {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-     Home home = new Home();
-     ClientAdmin cl = new ClientAdmin();
-     Next next = new Next();
+    ClientAdmin cl = new ClientAdmin();
     }
     
 }
